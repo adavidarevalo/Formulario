@@ -7,16 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar Secion</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/bd269fc52d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header>
+
+  </header>
   <main>
-    <form action="">
+    <form action="" class="form">
       <h1 class="form_title">Inciar Secion</h1>
-      <section>
-        <input type="email" placeholder="Correo" required id="form_mail">
-        <input type="password" placeholder="Contraseña" required id="form_password">
-        <button type="submit">Iniciar Secion</button>
+      <section class="form_input">
+        <input type="email" placeholder="Correo" required id="form_mail" autocomplete="email">
+        <input type="password" placeholder="Contraseña" required id="form_password"> <br>
+        <input type="submit" value="Inicias Secion" class="form_button">
       </section>
       <section>
         <div>
@@ -28,8 +34,12 @@
         </div>
       </section>
       <section>
-
+        <i class="fab fa-facebook"></i>
+        <a href="#">Inicia Secion con Facebook</a>
+        <i class="fas fa-envelope"></i>
+        <a href="#">Inicia Secion con Gmail</a>
       </section>
+      <p>No tienes una cuenta <a href="#">Registrate.</a></p>
     </form>
   </main>
 </body>
