@@ -18,13 +18,15 @@
   </header>
   <main>
     <form action="" class="form">
-      <h1 class="form_title">Inciar Secion</h1>
+      <h1 class="form_title">Iniciar Sesión</h1>
       <section class="form_input">
         <input type="email" placeholder="Correo" required id="form_mail" autocomplete="email">
         <input type="password" placeholder="Contraseña" required id="form_password"> <br>
-        <input type="submit" value="Inicias Secion" class="form_button">
+        <div>
+          <input type="submit" value="Inicias Sesión" class="form_input-button">
+        </div>
       </section>
-      <section>
+      <section class="form_forget">
         <div>
           <input type="checkbox" name="" id="">
           <p>Recordarme</p>
@@ -33,11 +35,15 @@
           <a href="">Olvide mi Contraseña</a>
         </div>
       </section>
-      <section>
-        <i class="fab fa-facebook"></i>
-        <a href="#">Inicia Secion con Facebook</a>
-        <i class="fas fa-envelope"></i>
-        <a href="#">Inicia Secion con Gmail</a>
+      <section class="form_social">
+        <div class="form_social-facebok">
+          <i class="fab fa-facebook"></i>
+          <a href="#">Inicia Secion con Facebook</a>
+        </div>
+        <div class="form_social-gmail">
+          <i class="fas fa-envelope"></i>
+          <a href="#">Inicia Secion con Gmail</a>
+        </div>
       </section>
       <p>No tienes una cuenta <a href="#">Registrate.</a></p>
     </form>

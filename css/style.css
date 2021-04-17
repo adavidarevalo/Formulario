@@ -9,8 +9,12 @@
   padding: 0;
   margin: 0;
 }
+a {
+  font-family: "Poppins", sans-serif;
+}
 body {
   background: #6a3be4;
+  font-family: "Poppins", sans-serif;
 }
 body header {
   background: #6139c5;
@@ -27,14 +31,35 @@ body main .form {
   margin: 0 auto;
   padding: 20px;
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #fff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 body main .form h1 {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #000;
   text-align: center;
   margin-bottom: 30px;
+  letter-spacing: 8px;
+}
+body main .form_forget {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+body main .form_forget div p {
+  display: inline-block;
+  padding-left: 5px;
+  color: #000;
+}
+body main .form_forget div a {
+  color: #000;
+}
+body main .form_social {
+  width: 60%;
+  margin: 0 auto;
+}
+body main .form_social i {
+  margin-right: 10px;
 }
 .form_input {
   display: flex;
@@ -48,13 +73,25 @@ body main .form h1 {
   margin-block: 20px;
   background: none;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #555;
   outline: none;
   color: #fff;
   padding-left: 10px;
   font-size: 15px;
 }
+.form_input div input {
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background: #6a3be4;
+  font-family: "Poppins", sans-serif;
+}
+.form_input div input:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 ::placeholder {
-  color: #fff;
+  color: #555;
   font-family: "Poppins", sans-serif;
 }
