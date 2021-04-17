@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 797.83 797.83" style="enable-background:new 0 0 797.83 797.83;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st1{clip-path:url(#SVGID_2_);fill:#6E5ABA;}
+	.st2{clip-path:url(#SVGID_2_);fill:#6139C5;}
+	.st3{clip-path:url(#SVGID_2_);fill:#5C5298;}
+	.st4{clip-path:url(#SVGID_2_);fill:#594293;}
+	.st5{fill:#6139C5;}
+	.st6{fill:#6E5ABA;}
+	.st7{fill:#FFFFFF;}
+	.st8{fill:#5C5298;}
+	.st9{fill:#594293;}
+</style>
+<g id="BG">
+</g>
+<g id="Alphabet_1_">
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M775.15,797.83H22.68C10.2,797.83,0,787.62,0,775.15V22.68C0,10.2,10.2,0,22.68,0h752.47
+				c12.47,0,22.68,10.2,22.68,22.68v752.47C797.83,787.62,787.62,797.83,775.15,797.83z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<rect x="-162.09" y="-129.19" class="st0" width="1122" height="1122"/>
+		<polygon class="st1" points="141.16,198.54 216.34,273.69 360.52,274.8 360.52,198.36 		"/>
+		<path class="st2" d="M428.12,197.65l-84.26,477.86H224.79l84.26-477.86H141.09l21.13-119.86h454.99l-21.13,119.86H428.12z"/>
+		<polygon class="st1" points="224.87,677.27 299.94,752.93 419.16,752.93 343.87,677.17 		"/>
+		<polygon class="st3" points="343.87,676.4 428.13,198.54 503.27,273.69 419.16,751.91 		"/>
+		<polygon class="st1" points="427.92,199.44 595.74,199.44 671.23,272.81 503.07,272.81 		"/>
+		<polygon class="st4" points="595.74,198.36 617.22,78.68 692.37,153.83 671.23,273.5 		"/>
+	</g>
+	<rect x="1976.4" y="-483.21" class="st5" width="1122" height="1122"/>
+	<polygon class="st6" points="2279.64,-155.47 2354.82,-80.33 2499,-79.22 2499,-155.66 	"/>
+	<path class="st7" d="M2566.61-156.36l-84.26,477.86h-119.07l84.26-477.86h-167.96l21.13-119.86h454.99l-21.13,119.86H2566.61z"/>
+	<polygon class="st6" points="2363.35,323.25 2438.43,398.91 2557.64,398.91 2482.35,323.15 	"/>
+	<polygon class="st8" points="2482.35,322.38 2566.61,-155.47 2641.76,-80.33 2557.64,397.89 	"/>
+	<polygon class="st6" points="2566.41,-154.58 2734.23,-154.58 2809.72,-81.2 2641.55,-81.2 	"/>
+	<polygon class="st9" points="2734.23,-155.66 2755.7,-275.33 2830.85,-200.19 2809.72,-80.52 	"/>
+</g>
+</svg>

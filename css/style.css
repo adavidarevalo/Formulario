@@ -19,20 +19,41 @@ body {
 body header {
   background: #6139c5;
   width: 100%;
-  height: 50px;
+  height: auto;
   border-bottom: 1px solid #2222;
+  margin-bottom: 5vh;
+}
+body header img {
+  width: 40px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  box-shadow: 5px 5px 1px 1px rgba(255, 255, 255, 0.2);
+}
+body header p {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 body main {
   width: 100%;
 }
 body main .form {
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   margin: 0 auto;
   padding: 20px;
+  padding-block: 60px;
   border-radius: 25px;
   background: #fff;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 7.5vh;
 }
 body main .form h1 {
   font-family: "Poppins", sans-serif;
@@ -54,12 +75,33 @@ body main .form_forget div p {
 body main .form_forget div a {
   color: #000;
 }
+body main .form_forget a:hover {
+  text-decoration: underline;
+  color: #6139c5;
+}
 body main .form_social {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
+  margin-top: 40px;
+}
+body main .form_social a {
+  text-decoration: none;
+  color: #000;
+}
+body main .form_social a:hover {
+  text-decoration: underline;
+  color: #6139c5;
+}
+body main .form_social-gmail,
+body main .form_social-facebook {
+  margin-block: 12px;
 }
 body main .form_social i {
   margin-right: 10px;
+}
+body main .form_registrarse {
+  text-align: center;
+  margin-top: 50px;
 }
 .form_input {
   display: flex;
@@ -94,4 +136,16 @@ body main .form_social i {
 ::placeholder {
   color: #555;
   font-family: "Poppins", sans-serif;
+}
+.body_footer {
+  background: #fff;
+  height: 50px;
+}
+.body_footer a {
+  padding: 15px;
+  color: #000;
+  text-decoration: none;
+}
+.body_footer a:hover {
+  text-decoration: underline;
 }
