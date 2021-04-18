@@ -1,0 +1,101 @@
+@import "partes/variables.less";
+@import "partes/header.less";
+a {
+  .family;
+}
+body {
+  background: @clr-purpur;
+  .family;
+  main {
+    width: 100%;
+    form {
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+      padding: 20px;
+      padding-block: 60px;
+      border-radius: 25px;
+      background: @clr-white;
+      box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.2);
+      margin-bottom: 7.5vh;
+      h1 {
+        text-align: center;
+        letter-spacing: 8px;
+      }
+    }
+  }
+}
+// imputs
+.form {
+  .form_info-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      width: 75%;
+      margin-block: 10px;
+      border: none;
+      border-bottom: 1px solid @clr-gray;
+      padding: 10px;
+      outline: none;
+    }
+  }
+  &_info-sex {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    span {
+      margin-left: 10px;
+      .family;
+    }
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+  }
+  &_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      margin-top: 20px;
+      width: 80%;
+      border: 1px solid @clr-purpur;
+      padding: 10px;
+
+      outline: none;
+    }
+  }
+  &_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      letter-spacing: 1px;
+      font-size: 1rem;
+      color: @clr-white;
+      border: none;
+      width: auto;
+      height: auto;
+      padding: 10px 15px;
+      border-radius: 25px;
+      background: @clr-purpur;
+      .family;
+    }
+    input:hover {
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    a {
+      margin-top: 20px;
+    }
+    a:hover {
+      color: @clr-black;
+    }
+  }
+}
+
+@import "partes/footer.less";

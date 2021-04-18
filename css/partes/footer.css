@@ -1,0 +1,33 @@
+.bordes-imagen {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.family {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.body_footer {
+  background: #fff;
+  height: auto;
+}
+.body_footer a {
+  padding: 15px;
+  color: #000;
+  text-decoration: none;
+  display: inherit;
+}
+.body_footer a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 440px) {
+  .form_forget {
+    display: flex;
+    flex-direction: inherit;
+  }
+  .body_footer {
+    display: flex;
+  }
+}

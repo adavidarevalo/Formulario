@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrate</title>
+  <link rel="stylesheet" href="../css/resgistrarse.css">
+  <script src="https://kit.fontawesome.com/bd269fc52d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/toguether.png">
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <img src="../img/toguether.svg" alt="Logo de Toguether">
+    </a>
+    <p>toguether</p>
+  </header>
+  <main>
+    <form action="" class="form" id="form">
+      <h1 class="form_title">Registrate</h1>
+      <section class="form_info">
+        <div class="form_info-input">
+          <input type="name" placeholder="Name" required id="form_name" autocomplete="name">
+          <input type="email" placeholder="Email" required id="form_registrarse-email" autocomplete="email">
+          <input type="password" placeholder="Password" required id="form_registrarse-password">
+          <input type="password" placeholder="Repet your Password" required id="form_registrarse-password2">
+        </div>
+        <br>
+        <div class="form_info-sex">
+          <div>
+            <input type="radio" name="sex">
+            <span>Mujer</span>
+          </div>
+          <div>
+            <input type="radio" name="sex">
+            <span>Hombre</span>
+          </div>
+        </div>
+        <div class="form_data">
+          <h2>Fecha de Nacimiento</h2>
+          <input type="date" max="2010-01-01">
+        </div>
+        <br>
+        <div class="form_button">
+          <input type="submit" value="Registrate" class="form_input-button">
+          <a href="../index.html">Iniciar Sesión</a>
+        </div>
+      </section>
+    </form>
+  </main>
+  <footer class="body_footer">
+    <a href="">Terminos de uso</a>
+    <a href="">Declaración de Privacidad</a>
+    <a href="">Centro de Ayuda</a>
+  </footer>
+  <script src="../js/resgistrate.js"></script>
+</body>
+
+</html>

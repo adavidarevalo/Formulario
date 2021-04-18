@@ -1,0 +1,36 @@
+.bordes-imagen {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.family {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background: #6139c5;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #2222;
+  margin-bottom: 3vh;
+}
+header img {
+  width: 40px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  box-shadow: 5px 5px 1px 1px rgba(255, 255, 255, 0.2);
+}
+header p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 14px;
+}

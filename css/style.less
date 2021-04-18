@@ -1,50 +1,11 @@
-.bordes-imagen {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.family {
-  font-family: "Poppins", sans-serif;
-}
-@clr-purpur: #6a3be4;
-@clr-dark-purpur: #6139c5;
-@clr-white: #fff;
-@clr-black: #000;
-@clr-gray: #555;
-* {
-  padding: 0;
-  margin: 0;
-}
+@import "partes/variables.less";
 a {
   .family;
 }
 body {
   background: @clr-purpur;
   .family;
-  header {
-    background: @clr-dark-purpur;
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #2222;
-    margin-bottom: 5vh;
-    img {
-      width: 40px;
-      margin-left: 50px;
-      margin-top: 10px;
-      margin-bottom: 7px;
-      box-shadow: 5px 5px 1px 1px rgba(255, 255, 255, 0.2);
-    }
-    p {
-      text-transform: uppercase;
-      font-size: 2.3rem;
-      font-weight: 600;
-      letter-spacing: 10px;
-      display: inline-block;
-      color: @clr-white;
-      position: absolute;
-      margin-left: 25px;
-      margin-top: 5px;
-    }
-  }
+  @import "partes/header.less";
   main {
     width: 100%;
     .form {
@@ -56,7 +17,7 @@ body {
       border-radius: 25px;
       background: @clr-white;
       box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.2);
-      margin-bottom: 7.5vh;
+      margin-bottom: 6vh;
       h1 {
         .family;
         color: @clr-black;
@@ -67,6 +28,8 @@ body {
       &_forget {
         margin-top: 20px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-around;
         div p {
           display: inline-block;
@@ -112,6 +75,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  div input {
+    color: @clr-white;
+  }
   input {
     width: 80%;
     height: 30px;
@@ -121,7 +87,7 @@ body {
     border: none;
     border-bottom: 1px solid @clr-gray;
     outline: none;
-    color: @clr-white;
+    color: @clr-gray;
     padding-left: 10px;
     font-size: 15px;
   }
@@ -144,15 +110,6 @@ body {
   .family;
 }
 //Footer
-.body_footer {
-  background: @clr-white;
-  height: 50px;
-  a {
-    padding: 15px;
-    color: @clr-black;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-}
+@import "partes/footer.less";
+
+@import "media-query.less";

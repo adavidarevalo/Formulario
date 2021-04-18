@@ -1,0 +1,11 @@
+.bordes-imagen {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.family {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}

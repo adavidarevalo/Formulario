@@ -10,6 +10,7 @@
   <script src="https://kit.fontawesome.com/bd269fc52d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/toguether.png">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <p>toguether</p>
   </header>
   <main>
-    <form action="" class="form">
+    <form action="" class="form" id="form">
       <h1 class="form_title">Iniciar Sesión</h1>
       <section class="form_input">
         <input type="email" placeholder="Correo" required id="form_mail" autocomplete="email">
@@ -28,6 +29,7 @@
         <div>
           <input type="submit" value="Inicias Sesión" class="form_input-button">
         </div>
+        <p class="warnings" id="warnings"></p>
       </section>
       <section class="form_forget">
         <div>
@@ -49,7 +51,7 @@
         </div>
       </section>
       <section class="form_registrarse">
-        <p>No tienes una cuenta <a href="#">Registrate.</a></p>
+        <p>No tienes una cuenta <a href="pages/registrarse.html">Registrate.</a></p>
       </section>
     </form>
   </main>
@@ -58,6 +60,7 @@
     <a href="">Declaración de Privacidad</a>
     <a href="">Centro de Ayuda</a>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
