@@ -1,5 +1,8 @@
 @import "partes/variables.less";
 @import "partes/header.less";
+header {
+  margin-bottom: 2.9vh;
+}
 a {
   .family;
 }
@@ -62,8 +65,8 @@ body {
     flex-direction: column;
     align-items: center;
     input {
-      margin-top: 20px;
-      width: 80%;
+      margin-top: 22px;
+      width: 50%;
       border: 1px solid @clr-purpur;
       padding: 10px;
 
@@ -96,6 +99,19 @@ body {
       color: @clr-black;
     }
   }
+}
+.errado,
+.correcto {
+  position: absolute;
+  top: 46vh;
+  left: 57vw;
+  display: none;
+}
+.errado2 {
+  display: block;
+}
+.correcto2 {
+  display: block;
 }
 
 @import "partes/footer.less";

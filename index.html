@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/toguether.png">
+
 </head>
 
 <body>
@@ -21,13 +22,13 @@
     <p>toguether</p>
   </header>
   <main>
-    <form action="" class="form" id="form">
+    <form action="" class="form headline" id="form">
       <h1 class="form_title">Iniciar Sesión</h1>
       <section class="form_input">
-        <input type="email" placeholder="Correo" required id="form_mail" autocomplete="email">
+        <input type="email" placeholder="Correo" required id="form_mail" autocomplete="email" id="email">
         <input type="password" placeholder="Contraseña" required id="form_password"> <br>
         <div>
-          <input type="submit" value="Inicias Sesión" class="form_input-button">
+          <input type="submit" value="Inicias Sesión" class="form_input-button" onclick="mostrarValores()">
         </div>
         <p class="warnings" id="warnings"></p>
       </section>

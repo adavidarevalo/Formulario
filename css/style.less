@@ -1,4 +1,5 @@
 @import "partes/variables.less";
+@import "media-query.less";
 a {
   .family;
 }
@@ -28,8 +29,8 @@ body {
       &_forget {
         margin-top: 20px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+
         justify-content: space-around;
         div p {
           display: inline-block;
@@ -111,5 +112,3 @@ body {
 }
 //Footer
 @import "partes/footer.less";
-
-@import "media-query.less";

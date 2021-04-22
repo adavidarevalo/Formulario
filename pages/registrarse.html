@@ -21,19 +21,27 @@
     <p>toguether</p>
   </header>
   <main>
-    <form action="" class="form" id="form">
+    <form action="" class="form headline" id="form">
       <h1 class="form_title">Registrate</h1>
       <section class="form_info">
         <div class="form_info-input">
-          <input type="name" placeholder="Name" required id="form_name" autocomplete="name">
-          <input type="email" placeholder="Email" required id="form_registrarse-email" autocomplete="email">
-          <input type="password" placeholder="Password" required id="form_registrarse-password">
-          <input type="password" placeholder="Repet your Password" required id="form_registrarse-password2">
+          <input type="name" placeholder="Name" required id="form_name" autocomplete="name" name="name">
+          <input type="email" placeholder="Email" required id="form_registrarse-email" autocomplete="email" name="mail">
+          <input type="password" placeholder="Password" required id="form_registrarse-password" name="pass1">
+          <input type="password" placeholder="Repet your Password" required id="form_registrarse-password2"
+            name="pass2">
+          <div class="correcto" id="correcto">
+            <i class="fas fa-check-circle "></i>
+          </div>
+          <div class="errado" id="errado">
+            <i class="fas fa-times-circle "></i>
+          </div>
+
         </div>
         <br>
         <div class="form_info-sex">
           <div>
-            <input type="radio" name="sex">
+            <input type="radio" name="sex" required>
             <span>Mujer</span>
           </div>
           <div>
@@ -43,11 +51,12 @@
         </div>
         <div class="form_data">
           <h2>Fecha de Nacimiento</h2>
-          <input type="date" max="2010-01-01">
+          <input type="date" max="2010-01-01" required>
         </div>
         <br>
         <div class="form_button">
           <input type="submit" value="Registrate" class="form_input-button">
+          <p class="warnings" id="warnings"></p>
           <a href="../index.html">Iniciar Sesión</a>
         </div>
       </section>

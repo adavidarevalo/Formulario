@@ -9,6 +9,11 @@
   padding: 0;
   margin: 0;
 }
+@media (min-width: 440px) {
+  .body_footer {
+    display: flex;
+  }
+}
 a {
   font-family: "Poppins", sans-serif;
 }
@@ -21,7 +26,7 @@ body header {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #2222;
-  margin-bottom: 3vh;
+  margin-bottom: 5.3vh;
 }
 body header img {
   width: 40px;
@@ -65,8 +70,7 @@ body main .form h1 {
 body main .form_forget {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 body main .form_forget div p {
@@ -154,13 +158,4 @@ body main .form_registrarse {
 }
 .body_footer a:hover {
   text-decoration: underline;
-}
-@media (min-width: 440px) {
-  .form_forget {
-    display: flex;
-    flex-direction: inherit;
-  }
-  .body_footer {
-    display: flex;
-  }
 }
