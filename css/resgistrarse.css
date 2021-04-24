@@ -53,11 +53,14 @@ body {
 }
 body main {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body main form {
   max-width: 400px;
+  min-width: 400px;
   height: auto;
-  margin: 0 auto;
   padding: 20px;
   padding-block: 60px;
   border-radius: 25px;
@@ -89,6 +92,9 @@ body main form h1 {
   display: flex;
   justify-content: space-around;
 }
+.form_info-sex input {
+  cursor: pointer;
+}
 .form_info-sex span {
   margin-left: 10px;
   font-family: "Poppins", sans-serif;
@@ -109,6 +115,7 @@ body main form h1 {
   width: 50%;
   border: 1px solid #6a3be4;
   padding: 10px;
+  cursor: pointer;
   outline: none;
 }
 .form_button {
@@ -137,23 +144,10 @@ body main form h1 {
 .form_button a:hover {
   color: #000;
 }
-.errado,
-.correcto {
-  position: absolute;
-  top: 46vh;
-  left: 57vw;
-  display: none;
-}
-.errado2 {
-  display: block;
-}
-.correcto2 {
-  display: block;
-}
 .check-circle {
-  position: absolute;
-  top: 38.5vh;
-  left: 78vw;
+  position: fixed;
+  top: 200px;
+  left: 500px;
   display: none;
 }
 .check-circle .fa-check-circle {
@@ -172,7 +166,33 @@ body main form h1 {
   font-size: 0.8rem;
   display: none;
 }
-.displayBlock {
+.form_info-pass {
+  color: #c40000;
+  font-size: 0.8rem;
+  display: none;
+}
+.form_info-pass2 {
+  color: #c40000;
+  font-size: 0.8rem;
+  display: none;
+}
+.errado,
+.correcto {
+  position: absolute;
+  top: 68vh;
+  left: 78vw;
+  display: none;
+}
+.errado i {
+  color: #c40000;
+}
+.correcto i {
+  color: #33db33;
+}
+.errado2 {
+  display: block;
+}
+.correcto2 {
   display: block;
 }
 .body_footer {
@@ -192,4 +212,7 @@ body main form h1 {
   .body_footer {
     display: flex;
   }
+}
+.displayBlock {
+  display: block;
 }

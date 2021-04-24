@@ -11,10 +11,13 @@ body {
   .family;
   main {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     form {
       max-width: 400px;
+      min-width: 400px;
       height: auto;
-      margin: 0 auto;
       padding: 20px;
       padding-block: 60px;
       border-radius: 25px;
@@ -49,6 +52,9 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    input {
+      cursor: pointer;
+    }
     span {
       margin-left: 10px;
       .family;
@@ -69,7 +75,7 @@ body {
       width: 50%;
       border: 1px solid @clr-purpur;
       padding: 10px;
-
+      cursor: pointer;
       outline: none;
     }
   }
@@ -100,25 +106,12 @@ body {
     }
   }
 }
-.errado,
-.correcto {
-  position: absolute;
-  top: 46vh;
-  left: 57vw;
-  display: none;
-}
-.errado2 {
-  display: block;
-}
-.correcto2 {
-  display: block;
-}
 // inputs Comprobación
 //name
 .check-circle {
-  position: absolute;
-  top: 38.5vh;
-  left: 78vw;
+  position: fixed;
+  top: 200px;
+  left: 500px;
   display: none;
   .fa-check-circle {
     color: @clr-green;
@@ -139,7 +132,36 @@ body {
   .displayNone;
 }
 
-.displayBlock {
+//Pass incorredcto
+.form_info-pass {
+  .error;
+  .displayNone;
+}
+//pass no coinciden
+.form_info-pass2 {
+  .error;
+  .displayNone;
+}
+.errado,
+.correcto {
+  position: absolute;
+  top: 68vh;
+  left: 78vw;
+  display: none;
+}
+.errado i {
+  color: @clr-red;
+}
+.correcto i {
+  color: @clr-green;
+}
+.errado2 {
+  display: block;
+}
+.correcto2 {
   display: block;
 }
 @import "partes/footer.less";
+.displayBlock {
+  display: block;
+}

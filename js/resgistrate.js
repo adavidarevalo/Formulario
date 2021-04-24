@@ -8,12 +8,15 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
 	password: /^.{4,12}$/, 
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ 
 };
 const validar = (e) =>{
   switch(e.target.name){
     case "name":  
-      if(expresiones.usuario.test(e.target.value)){
+      if(e.target.value===""){
+        document.getElementById("times").classList.remove("displayBlock");
+        document.getElementById("circle").classList.remove("displayBlock");
+        document.getElementById("falseName").innerHTML="";
+      } else if(expresiones.nombre.test(e.target.value)){
         document.getElementById("falseName").innerHTML="";
         document.getElementById("circle").classList.add("displayBlock");
         document.getElementById("times").classList.remove("displayBlock");
@@ -24,18 +27,41 @@ const validar = (e) =>{
       }
     break;
     case "mail":  
-      if(expresiones.correo.test(e.target.value)){
+      if(e.target.value===""){
+        document.getElementById("falseMail").classList.remove("displayBlock");
+      } else if(expresiones.correo.test(e.target.value)){
         document.getElementById("falseMail").classList.remove("displayBlock");
       } else {
         document.getElementById("falseMail").classList.add("displayBlock");
       }
     break;
     case "pass1":  
-      console.log("pass1")
+      if(e.target.value===""){
+        document.getElementById("falsePass").classList.remove("displayBlock");
+      } else if(expresiones.password.test(e.target.value)){
+        document.getElementById("falsePass").classList.remove("displayBlock");
+      } else {
+        document.getElementById("falsePass").classList.add("displayBlock");
+      }
     break;
     case "pass2":  
-      console.log("pass2")
-    break;
+      if(e.target.value===""){
+        document.getElementById('errado').classList.remove('errado2');
+        document.getElementById('correcto').classList.remove('correcto2');
+        document.getElementById('diferentPass').classList.remove("displayBlock");
+      } else {
+        pass2.addEventListener("keyup",()=>{
+          if(pass.value===pass2.value){
+             document.getElementById('correcto').classList.add('correcto2');
+             document.getElementById('errado').classList.remove('errado2');
+             document.getElementById('diferentPass').classList.remove("displayBlock");
+           } else {
+             document.getElementById('errado').classList.add('errado2');
+            document.getElementById('correcto').classList.remove('correcto2');
+            document.getElementById('diferentPass').classList.add("displayBlock");
+  }
+})
+      }
   }
 }
 inputs.forEach((input)=>{
@@ -44,13 +70,4 @@ inputs.forEach((input)=>{
 })
 form.addEventListener("submit",(e)=>{
   e.preventDefault();
-})
-pass2.addEventListener("keyup",()=>{
-  if(pass.value===pass2.value){
-    document.getElementById('correcto').classList.add('correcto2');
-    document.getElementById('errado').classList.remove('errado2');
-  } else {
-    document.getElementById('errado').classList.add('errado2');
-    document.getElementById('correcto').classList.remove('correcto2');
-  }
 })
