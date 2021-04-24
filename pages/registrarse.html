@@ -26,7 +26,16 @@
       <section class="form_info">
         <div class="form_info-input">
           <input type="name" placeholder="Name" required id="form_name" autocomplete="name" name="name">
+          <div class="check-circle" id="circle">
+            <i class="far fa-check-circle" id="check-circle"></i>
+          </div>
+          <div class="check-circle" id="times">
+            <i class="far fa-times-circle"></i>
+          </div>
+          <p id="falseName" class="form_info-false"></p>
           <input type="email" placeholder="Email" required id="form_registrarse-email" autocomplete="email" name="mail">
+          <p id="falseMail" class="form_info-mail">Email Incorrecto</p>
+          <p id="falseName" class="form_info-false"></p>
           <input type="password" placeholder="Password" required id="form_registrarse-password" name="pass1">
           <input type="password" placeholder="Repet your Password" required id="form_registrarse-password2"
             name="pass2">

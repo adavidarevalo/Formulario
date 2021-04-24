@@ -113,5 +113,33 @@ body {
 .correcto2 {
   display: block;
 }
+// inputs Comprobación
+//name
+.check-circle {
+  position: absolute;
+  top: 38.5vh;
+  left: 78vw;
+  display: none;
+  .fa-check-circle {
+    color: @clr-green;
+  }
+  //Nombre Errado
+  .fa-times-circle {
+    .error;
+  }
+}
+// Nombre Incorrecto
+.form_info-false {
+  color: @clr-red;
+  font-size: 0.8rem;
+}
+//Email incorrecto
+.form_info-mail {
+  .error;
+  .displayNone;
+}
 
+.displayBlock {
+  display: block;
+}
 @import "partes/footer.less";

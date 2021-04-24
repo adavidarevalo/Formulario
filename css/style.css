@@ -5,6 +5,13 @@
 .family {
   font-family: "Poppins", sans-serif;
 }
+.error {
+  color: #c40000;
+  font-size: 0.8rem;
+}
+.displayNone {
+  display: none;
+}
 * {
   padding: 0;
   margin: 0;

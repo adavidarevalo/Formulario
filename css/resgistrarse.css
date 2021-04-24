@@ -5,6 +5,13 @@
 .family {
   font-family: "Poppins", sans-serif;
 }
+.error {
+  color: #c40000;
+  font-size: 0.8rem;
+}
+.displayNone {
+  display: none;
+}
 * {
   padding: 0;
   margin: 0;
@@ -141,6 +148,31 @@ body main form h1 {
   display: block;
 }
 .correcto2 {
+  display: block;
+}
+.check-circle {
+  position: absolute;
+  top: 38.5vh;
+  left: 78vw;
+  display: none;
+}
+.check-circle .fa-check-circle {
+  color: #33db33;
+}
+.check-circle .fa-times-circle {
+  color: #c40000;
+  font-size: 0.8rem;
+}
+.form_info-false {
+  color: #c40000;
+  font-size: 0.8rem;
+}
+.form_info-mail {
+  color: #c40000;
+  font-size: 0.8rem;
+  display: none;
+}
+.displayBlock {
   display: block;
 }
 .body_footer {
