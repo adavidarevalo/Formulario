@@ -59,7 +59,8 @@ body main {
 }
 body main form {
   max-width: 400px;
-  min-width: 400px;
+  width: 400px;
+  min-width: 250px;
   height: auto;
   padding: 20px;
   padding-block: 60px;
@@ -145,9 +146,9 @@ body main form h1 {
   color: #000;
 }
 .check-circle {
-  position: fixed;
-  top: 200px;
-  left: 500px;
+  position: absolute;
+  top: 230px;
+  left: 80%;
   display: none;
 }
 .check-circle .fa-check-circle {
@@ -179,8 +180,8 @@ body main form h1 {
 .errado,
 .correcto {
   position: absolute;
-  top: 68vh;
-  left: 78vw;
+  top: 400px;
+  left: 80%;
   display: none;
 }
 .errado i {
@@ -215,4 +216,47 @@ body main form h1 {
 }
 .displayBlock {
   display: block;
+}
+.TerminosCondiciones {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.TerminosCondiciones a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.TerminosCondiciones a:hover {
+  color: #6a3be4;
+}
+.warnings {
+  color: #555;
+  margin-top: 10px;
+}
+@media (min-width: 477px) {
+  .errado,
+  .correcto {
+    left: 70%;
+  }
+  .check-circle {
+    left: 70%;
+  }
+}
+@media (min-width: 721px) {
+  .errado,
+  .correcto {
+    left: 60%;
+  }
+  .check-circle {
+    left: 60%;
+  }
+}
+@media (min-width: 1439px) {
+  .errado,
+  .correcto {
+    left: 58%;
+  }
+  .check-circle {
+    left: 58%;
+  }
 }

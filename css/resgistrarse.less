@@ -16,7 +16,8 @@ body {
     align-items: center;
     form {
       max-width: 400px;
-      min-width: 400px;
+      width: 400px;
+      min-width: 250px;
       height: auto;
       padding: 20px;
       padding-block: 60px;
@@ -109,9 +110,9 @@ body {
 // inputs Comprobación
 //name
 .check-circle {
-  position: fixed;
-  top: 200px;
-  left: 500px;
+  position: absolute;
+  top: 230px;
+  left: 80%;
   display: none;
   .fa-check-circle {
     color: @clr-green;
@@ -145,8 +146,8 @@ body {
 .errado,
 .correcto {
   position: absolute;
-  top: 68vh;
-  left: 78vw;
+  top: 400px;
+  left: 80%;
   display: none;
 }
 .errado i {
@@ -164,4 +165,49 @@ body {
 @import "partes/footer.less";
 .displayBlock {
   display: block;
+}
+//Terminos y Condiciones
+.TerminosCondiciones {
+  text-align: center;
+  margin-bottom: 20px;
+  a {
+    text-decoration: none;
+    color: @clr-black;
+    .family;
+  }
+  a:hover {
+    color: @clr-purpur;
+  }
+}
+// Formulario Enviado
+.warnings {
+  color: @clr-gray;
+  margin-top: 10px;
+}
+@media (min-width: 477px) {
+  .errado,
+  .correcto {
+    left: 70%;
+  }
+  .check-circle {
+    left: 70%;
+  }
+}
+@media (min-width: 721px) {
+  .errado,
+  .correcto {
+    left: 60%;
+  }
+  .check-circle {
+    left: 60%;
+  }
+}
+@media (min-width: 1439px) {
+  .errado,
+  .correcto {
+    left: 58%;
+  }
+  .check-circle {
+    left: 58%;
+  }
 }
